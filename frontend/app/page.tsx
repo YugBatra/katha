@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-katha-bg">
@@ -23,6 +25,12 @@ export default function HomePage() {
         <p className="font-body text-sm uppercase tracking-[0.3em] text-katha-muted">
           Coming soon
         </p>
+        <Link
+          href="/stories"
+          className="font-body mt-6 text-sm tracking-wide text-katha-gold transition-opacity duration-200 hover:opacity-70"
+        >
+          Enter the library →
+        </Link>
       </div>
     </main>
   );
